@@ -14,11 +14,51 @@
     <title>NFT preview card component</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
-  <body>
-    <p>Equilibrium #3429</p>
-    <p>Our Equilibrium collection promotes balance and calm.</p>
-    <p>0.041 ETH</p>
-    <p>3 days left</p>
-    <p>Creation of Jules Wyvern</p>
+  <body class="flex min-h-dvh items-center justify-center bg-blue-800 p-6">
+    <main
+      class="max-w-[350px] space-y-6 rounded-2xl bg-blue-600 p-6 text-blue-200"
+    >
+      <img
+        class="cursor-pointer rounded-lg"
+        src="/images/image-equilibrium.jpg"
+        alt=""
+      />
+      <div class="space-y-4">
+        <h1
+          class="cursor-pointer text-2xl font-semibold text-white hover:text-cyan"
+        >
+          Equilibrium #3429
+        </h1>
+        <p class="text-lg font-light">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+      </div>
+      <div class="flex items-center justify-between">
+        <div class="flex items-center justify-between gap-2">
+          <img src="/images/icon-ethereum.svg" alt="" />
+          <p class="font-semibold text-cyan">0.041 ETH</p>
+        </div>
+        <div class="flex items-center justify-between gap-2">
+          <img src="/images/icon-clock.svg" alt="" />
+          <p>3 days left</p>
+        </div>
+      </div>
+      <div class="space-y-4">
+        <hr class="border-blue-400" />
+        <div class="flex items-center justify-start gap-4">
+          <img
+            class="size-8 rounded-full border-[1px] border-white"
+            src="./public/images/image-avatar.png"
+            alt=""
+          />
+          <p>
+            Creation of
+            <span class="cursor-pointer text-white hover:text-cyan"
+              >Jules Wyvern</span
+            >
+          </p>
+        </div>
+      </div>
+    </main>
   </body>
 </html>
